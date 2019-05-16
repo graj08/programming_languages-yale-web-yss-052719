@@ -7,6 +7,7 @@ def reformat_languages(languages)
     lang_and_type.each do |lang,attributes|
     new_hash[lang] = attributes
     if new_hash[lang].include?(:style)
+      binding.pry
       new_hash[lang][:style] << style
   else
     new_hash[lang][:style] = Array.new
