@@ -9,5 +9,6 @@ def reformat_languages(languages)
     new_hash[lang][:style] = style
     binding.pry
   end
+end
   new_hash
 end
