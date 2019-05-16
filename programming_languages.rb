@@ -9,6 +9,7 @@ def reformat_languages(languages)
     if new_hash[lang].include?(:style)
       binding.pry
       new_hash[lang][:style] << style
+      binding.pry
   else
     new_hash[lang][:style] = Array.new
     new_hash[lang][:style] << style
