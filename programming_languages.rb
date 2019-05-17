@@ -15,8 +15,11 @@ end
 new_hash.each do |lang,attributes|
   if languages[:oo].include?(lang)
     attributes[:style] << :oo
+  end
   if languages[:functional].include?(lang)
     attributes[:style] << :functional
+  end
+end
 binding.pry
 new_hash
 end
